@@ -1,6 +1,6 @@
 .tabs {
   padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 .container-tabs {
   font-size: 0;
@@ -13,9 +13,9 @@
   background: white;
   height: 2rem;
   text-align: center;
-  width: 12rem;
+  width: 13.17rem;
   border: 1px solid #c6cbcd;
-  display: table-cell;
+  display: inline-block;
   border-radius: 5px 5px 0 0;
   border-bottom: none;
 }
@@ -28,15 +28,18 @@
   border: none;
 }
 .tabs__block {
-  display: table;
   border: 1px solid #c6cbcd;
+  font-size: 0;
+  padding: 0;
+  width: 100%;
+
 }
 .tabs__block-content {
   width: 50%;
   text-align: left;
-  padding: 0.9rem 5.5rem;
+  padding: 0.9rem 6.25rem;
   font-size: 0;
-  display: table-cell;
+  display: inline-block;
 }
 .tabs__block-title {
   font-family: "Open Sans", serif;
@@ -65,10 +68,15 @@
   border: 0;
   margin-bottom: 3.4rem;
 }
-.tabs_block-picture {
-  width: 40%;
-  display: table-cell;
-  border: 0;
-  background: url("/assets/pictures/statue.png") 100% 100% no-repeat;
-  background-size: cover;
+.tabs__block-picture {
+  width: 50%;
+  height:100%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+.tabs__block-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
