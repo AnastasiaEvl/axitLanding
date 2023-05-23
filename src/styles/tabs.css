@@ -1,0 +1,76 @@
+.tabs {
+  padding-top: 2rem;
+}
+.container-tabs {
+  font-size: 0;
+}
+.container-tabs__button {
+  font-family: "Open Sans", serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #333333;
+  background: white;
+  height: 2rem;
+  text-align: center;
+  width: 13.17rem;
+  border: 1px solid #c6cbcd;
+  display: table-cell;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+}
+.container-tabs__button_on {
+  z-index: 1;
+  position: relative;
+  top: 2px;
+}
+.container-tabs__button_off {
+  border: none;
+}
+.tabs__block {
+  display: table;
+  border-left: 1px solid #c6cbcd;
+  border-right: 1px solid #c6cbcd;
+  border-bottom: 1px solid #c6cbcd;
+  border-top: 1px solid #c6cbcd;
+}
+.tabs__block-content {
+  width: 50%;
+  text-align: left;
+  padding: 0.9rem 6.25rem;
+  font-size: 0;
+  display: table-cell;
+}
+.tabs__block-title {
+  font-family: "Open Sans", serif;
+  font-size: 1.9rem;
+  margin-bottom: 1.25rem;
+  padding-top: 2rem;
+}
+.tabs__block-description {
+  font-family: Raleway, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  margin-bottom: 1.25rem;
+}
+.tabs__block-button {
+  margin-top: 2rem;
+  width: 16.9rem;
+  height: 3.6rem;
+  background-color: #ec7979;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Open Sans", fantasy;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 600;
+  border: 0;
+  margin-bottom: 3.4rem;
+}
+.tabs_block-picture {
+  width: 40%;
+  display: table-cell;
+  border: 0;
+  background: url("/assets/pictures/statue.png") 100% 100% no-repeat;
+  background-size: cover;
+}
