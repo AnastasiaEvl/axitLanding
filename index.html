@@ -1,70 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>AXIT</title>
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/awesome.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/container.css" />
+    <link rel="stylesheet" href="./src/styles/section-header.css" />
+    <link rel="stylesheet" href="./src/styles/awesome.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-            href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
-            rel="stylesheet"
-    >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&family=Raleway&display=swap"
-            rel="stylesheet"
-    >
-</head>
-<body>
-<section class="awesome">
-    <div class="awesome-header">
-        <h2 class="awesome-header__title">why this is awesome</h2>
-        <div class="awesome-header__line"></div>
-        <p class="awesome-header__description">
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="awesome">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__title">why this is awesome</h2>
+          <div class="section-header__line"></div>
+          <p class="section-header__description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-    </div>
-    <div class="awesome-content">
-        <div class="awesome-content__about">
-            <img
-                    class="awesome-content__about-icon"
-                    src="./assets/icons/lamp.svg" alt="">
-            <h3 class="awesome-content__about-header">Thoughtful Design</h3>
-            <p class="awesome-content__about-description">
-                Lorem ipsum dolor sit amet, consectetur<br>
-                adipiscing <br>elit. Aenean euismod bibendum laoreet.<br>Proin
-                gravida dolor sit amet lacus<br>
-                accumsan et viverra.
-            </p>
+          </p>
         </div>
-        <div class="awesome-content__about">
+        <div class="awesome__content-box">
+          <div class="awesome__card">
             <img
-                    class="awesome-content__about-icon"
-                    src="./assets/icons/keyboard.svg" alt="">
-            <h3 class="awesome-content__about-header">Thoughtful Design</h3>
-            <p class="awesome-content__about-description">
-                Lorem ipsum dolor sit amet, consectetur<br>
-                adipiscing <br>elit. Aenean euismod bibendum laoreet.<br>Proin
-                gravida dolor sit amet lacus<br>
-                accumsan et viverra.
+              class="awesome__card-icon"
+              src="src/icons/lamp.svg"
+              alt="lamp icon"
+            />
+            <h3 class="awesome__card-title">Thoughtful Design</h3>
+            <p class="awesome__card-description">
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Aenean euismod bibendum laoreet.Proin
+              gravida dolor sit amet lacus
+              accumsan et viverra.
             </p>
-        </div>
-        <div class="awesome-content__about">
+          </div>
+          <div class="awesome__card">
             <img
-                    class="awesome-content__about-icon"
-                    src="./assets/icons/flash.svg" alt="">
-            <h3 class="awesome-content__about-header">Thoughtful Design</h3>
-            <p class="awesome-content__about-description">
-                Lorem ipsum dolor sit amet, consectetur<br>
-                adipiscing <br>elit. Aenean euismod bibendum laoreet.<br>Proin
-                gravida dolor sit amet lacus<br>
-                accumsan et viverra.
+              class="awesome__card-icon"
+              src="src/icons/keyboard.svg"
+              alt="keyboard icon"
+            />
+            <h3 class="awesome__card-title">Thoughtful Design</h3>
+            <p class="awesome__card-description">
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Aenean euismod bibendum laoreet.Proin
+              gravida dolor sit amet lacus
+              accumsan et viverra.
             </p>
+          </div>
+          <div class="awesome__card">
+            <img
+              class="awesome__card-icon"
+              src="src/icons/flash.svg"
+              alt="flash icon"
+            />
+            <h3 class="awesome__card-title">Thoughtful Design</h3>
+            <p class="awesome__card-description">
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Aenean euismod bibendum laoreet.Proin
+              gravida dolor sit amet lacus
+              accumsan et viverra.
+            </p>
+          </div>
         </div>
-    </div>
-</section>
-</body>
+      </div>
+    </section>
+  </body>
 </html>
