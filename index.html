@@ -27,100 +27,260 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Raleway&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./src/styles/header.css" />
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/container.css" />
     <link rel="stylesheet" href="./src/styles/section-header.css" />
     <link rel="stylesheet" href="./src/styles/awesome.css" />
     <link rel="stylesheet" href="./src/styles/tabs.css" />
+    <link rel="stylesheet" href="./src/styles/pricing.css" />
+    <link rel="stylesheet" href="./src/styles/footer.css" />
   </head>
   <body>
-    <section class="tabs">
-      <div class="container">
-        <nav class="container-tabs">
-          <button class="container-tabs__button container-tabs__button--on">
-            tab 1
-          </button>
-          <button class="container-tabs__button">tab 2</button>
-          <button class="container-tabs__button">tab 3</button>
-        </nav>
-        <div class="tabs__block">
-          <div class="tabs__block-content">
-            <h3 class="tabs__block-title">
-              Tabs with soft transitioning effect.
-            </h3>
-            <p class="tabs__block-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-              accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
-              Cum sociis natoque penatibus et magnis dis parturient montes.
-            </p>
-            <p class="tabs__block-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet.
-            </p>
-            <button class="tabs__block-button">download</button>
+    <div class="wrapper">
+      <main>
+        <header class="header">
+          <img class="header__logo" src="./src/icons/logo.png" alt="axit" />
+          <nav class="header-nav">
+            <a href="#" class="header-nav__section">features</a>
+            <a href="#" class="header-nav__section">about</a>
+            <a href="#" class="header-nav__section">pricing</a>
+            <a href="#" class="header-nav__section">reviews</a>
+            <a href="#" class="header-nav__section">contact</a>
+          </nav>
+        </header>
+        <section class="tabs">
+          <div class="container">
+            <div class="container-tabs">
+              <button
+                type="button"
+                class="container-tabs__button container-tabs__button--on"
+              >
+                tab 1
+              </button>
+              <button type="button" class="container-tabs__button">
+                tab 2
+              </button>
+              <button type="button" class="container-tabs__button">
+                tab 3
+              </button>
+            </div>
+            <div class="tabs__block">
+              <div class="tabs__block-content">
+                <h3 class="tabs__block-title">
+                  Tabs with soft transitioning effect.
+                </h3>
+                <p class="tabs__block-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+                  lacus accumsan et viverra justo commodo. Proin sodales
+                  pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                  parturient montes.
+                </p>
+                <p class="tabs__block-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet.
+                </p>
+                <button type="button" class="tabs__block-button">
+                  download
+                </button>
+              </div>
+              <div class="tabs__block-picture">
+                <img
+                  class="tabs__block-img"
+                  src="./assets/pictures/statue.png"
+                  alt="statue image"
+                />
+              </div>
+            </div>
           </div>
-          <div class="tabs__block-picture">
-            <img
-              class="tabs__block-img"
-              src="./assets/pictures/statue.png"
-              alt="statue image"
-            />
+        </section>
+        <section class="awesome">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-header__title">why this is awesome</h2>
+              <div class="section-header__line"></div>
+              <p class="section-header__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="awesome__content-box">
+              <div class="awesome__card">
+                <img
+                  class="awesome__card-icon"
+                  src="src/icons/lamp.svg"
+                  alt="lamp icon"
+                />
+                <h3 class="awesome__card-title">Thoughtful Design</h3>
+                <p class="awesome__card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet.Proin gravida dolor sit amet
+                  lacus accumsan et viverra.
+                </p>
+              </div>
+              <div class="awesome__card">
+                <img
+                  class="awesome__card-icon"
+                  src="src/icons/keyboard.svg"
+                  alt="keyboard icon"
+                />
+                <h3 class="awesome__card-title">Thoughtful Design</h3>
+                <p class="awesome__card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet.Proin gravida dolor sit amet
+                  lacus accumsan et viverra.
+                </p>
+              </div>
+              <div class="awesome__card">
+                <img
+                  class="awesome__card-icon"
+                  src="src/icons/flash.svg"
+                  alt="flash icon"
+                />
+                <h3 class="awesome__card-title">Thoughtful Design</h3>
+                <p class="awesome__card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean euismod bibendum laoreet.Proin gravida dolor sit amet
+                  lacus accumsan et viverra.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="awesome">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-header__title">why this is awesome</h2>
-          <div class="section-header__line"></div>
-          <p class="section-header__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="awesome__content-box">
-          <div class="awesome__card">
-            <img
-              class="awesome__card-icon"
-              src="src/icons/lamp.svg"
-              alt="lamp icon"
-            />
-            <h3 class="awesome__card-title">Thoughtful Design</h3>
-            <p class="awesome__card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet.Proin gravida dolor sit amet lacus
-              accumsan et viverra.
-            </p>
+        </section>
+        <section class="pricing">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-header__title">pricing options</h2>
+              <div class="section-header__line"></div>
+              <p class="section-header__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="pricing__content">
+              <div class="pricing__card">
+                <ul>
+                  <li class="pricing__card-item">basic</li>
+                  <li class="pricing__card-item pricing__card-item--price">
+                    $10
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--subtitle">
+                    free for life
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                </ul>
+              </div>
+              <div class="pricing__card">
+                <ul>
+                  <li class="pricing__card-item">basic</li>
+                  <li class="pricing__card-item pricing__card-item--price">
+                    $20
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--subtitle">
+                    free for life
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                </ul>
+              </div>
+              <div class="pricing__card">
+                <ul>
+                  <li class="pricing__card-item">basic</li>
+                  <li class="pricing__card-item pricing__card-item--price">
+                    $30
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--subtitle">
+                    free for life
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                  <li class="pricing__card-item pricing__card-item--points">
+                    1 gb of space
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="awesome__card">
-            <img
-              class="awesome__card-icon"
-              src="src/icons/keyboard.svg"
-              alt="keyboard icon"
-            />
-            <h3 class="awesome__card-title">Thoughtful Design</h3>
-            <p class="awesome__card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet.Proin gravida dolor sit amet lacus
-              accumsan et viverra.
-            </p>
+        </section>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__content">
+              <img
+                class="footer-icon"
+                src="./src/icons/facebook.svg"
+                alt="facebook"
+              />
+              <img
+                class="footer-icon"
+                src="./src/icons/twitter.svg"
+                alt="twitter"
+              />
+              <img
+                class="footer-icon"
+                src="./src/icons/pinterest.svg"
+                alt="pinterest"
+              />
+              <img
+                class="footer-icon"
+                src="./src/icons/instagram.svg"
+                alt="instagram"
+              />
+              <img
+                class="footer-icon"
+                src="./src/icons/github.svg"
+                alt="github"
+              />
+              <img class="footer-icon" src="./src/icons/rss.svg" alt="rss" />
+            </div>
+            <div class="footer__content-rights">© 2015 Axure Themes</div>
           </div>
-          <div class="awesome__card">
-            <img
-              class="awesome__card-icon"
-              src="src/icons/flash.svg"
-              alt="flash icon"
-            />
-            <h3 class="awesome__card-title">Thoughtful Design</h3>
-            <p class="awesome__card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet.Proin gravida dolor sit amet lacus
-              accumsan et viverra.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>

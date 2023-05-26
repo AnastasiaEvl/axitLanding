@@ -1,0 +1,20 @@
+.header{
+    background-color: #000000;
+    height:4.7rem;
+    display: flex;
+    justify-content: space-between;
+    padding:0 7.5rem;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    width: 46.2rem;
+}
+.header-nav__section{
+    color: #FFFFFF;
+    font-family: "Open Sans",sans-serif;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+
+}
