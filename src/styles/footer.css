@@ -2,23 +2,29 @@
     height: 10.2rem;
     background-color: black;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     flex-shrink: 0;
 }
 .footer__content{
     text-align: center;
     width: 100%;
 }
+.footer__icons{
+    display: flex;
+    height: 50%;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2.5rem;
+}
 .footer-icon{
-    min-width: 3.32rem;
-    min-height: 3.32rem;
-    padding-right: 2rem;
+    width: 3.32rem;
+    height: 3.32rem;
 }
 .footer__content-rights{
-    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: rgba(255, 255, 255, 0.5);
     font-family: Raleway,sans-serif;
     font-size: 1.2rem;
-    text-align: center;
+    height: 50%;
 }

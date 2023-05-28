@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>AXIT</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,14 +26,15 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Raleway&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/styles/header.css" />
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/container.css" />
+    <link rel="stylesheet" href="./src/styles/header.css" />
     <link rel="stylesheet" href="./src/styles/section-header.css" />
-    <link rel="stylesheet" href="./src/styles/awesome.css" />
     <link rel="stylesheet" href="./src/styles/tabs.css" />
+    <link rel="stylesheet" href="./src/styles/awesome.css" />
     <link rel="stylesheet" href="./src/styles/pricing.css" />
     <link rel="stylesheet" href="./src/styles/footer.css" />
+    <title>AXIT</title>
   </head>
   <body>
     <div class="wrapper">
@@ -42,11 +42,13 @@
         <header class="header">
           <img class="header__logo" src="./src/icons/logo.png" alt="axit" />
           <nav class="header-nav">
-            <a href="#" class="header-nav__section">features</a>
-            <a href="#" class="header-nav__section">about</a>
-            <a href="#" class="header-nav__section">pricing</a>
-            <a href="#" class="header-nav__section">reviews</a>
-            <a href="#" class="header-nav__section">contact</a>
+            <ul class="menu">
+              <li><a href="#" class="header-nav__section">features</a></li>
+              <li><a href="#" class="header-nav__section">about</a></li>
+              <li><a href="#" class="header-nav__section">pricing</a></li>
+              <li><a href="#" class="header-nav__section">reviews</a></li>
+              <li><a href="#" class="header-nav__section">contact</a></li>
+            </ul>
           </nav>
         </header>
         <section class="tabs">
@@ -88,7 +90,7 @@
               <div class="tabs__block-picture">
                 <img
                   class="tabs__block-img"
-                  src="./assets/pictures/statue.png"
+                  src="./src/assets/pictures/statue.png"
                   alt="statue image"
                 />
               </div>
@@ -158,124 +160,89 @@
             </div>
             <div class="pricing__content">
               <div class="pricing__card">
-                <ul>
-                  <li class="pricing__card-item">basic</li>
-                  <li class="pricing__card-item pricing__card-item--price">
-                    $10
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--subtitle">
-                    free for life
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
+                <ul class="pricing__card-header">
+                  <li class="pricing__card-title">basic</li>
+                  <li class="pricing__card-price">$10</li>
+                </ul>
+                <ul class="pricing__card-content">
+                  <li class="pricing__card-content-subtitle">free for life</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
                 </ul>
               </div>
               <div class="pricing__card">
-                <ul>
-                  <li class="pricing__card-item">basic</li>
-                  <li class="pricing__card-item pricing__card-item--price">
-                    $20
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--subtitle">
-                    free for life
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
+                <ul class="pricing__card-header">
+                  <li class="pricing__card-title">basic</li>
+                  <li class="pricing__card-price">$20</li>
+                </ul>
+                <ul class="pricing__card-content">
+                  <li class="pricing__card-content-subtitle">free for life</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
                 </ul>
               </div>
               <div class="pricing__card">
-                <ul>
-                  <li class="pricing__card-item">basic</li>
-                  <li class="pricing__card-item pricing__card-item--price">
-                    $30
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--subtitle">
-                    free for life
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
-                  <li class="pricing__card-item pricing__card-item--points">
-                    1 gb of space
-                  </li>
+                <ul class="pricing__card-header">
+                  <li class="pricing__card-title">basic</li>
+                  <li class="pricing__card-price">$30</li>
+                </ul>
+                <ul class="pricing__card-content">
+                  <li class="pricing__card-content-subtitle">free for life</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
+                  <li class="pricing__card-item">1 gb of space</li>
                 </ul>
               </div>
             </div>
           </div>
         </section>
         <footer class="footer">
-          <div class="container">
-            <div class="footer__content">
-              <img
-                class="footer-icon"
-                src="./src/icons/facebook.svg"
-                alt="facebook"
-              />
-              <img
-                class="footer-icon"
-                src="./src/icons/twitter.svg"
-                alt="twitter"
-              />
-              <img
-                class="footer-icon"
-                src="./src/icons/pinterest.svg"
-                alt="pinterest"
-              />
-              <img
-                class="footer-icon"
-                src="./src/icons/instagram.svg"
-                alt="instagram"
-              />
-              <img
-                class="footer-icon"
-                src="./src/icons/github.svg"
-                alt="github"
-              />
-              <img class="footer-icon" src="./src/icons/rss.svg" alt="rss" />
+          <div class="footer__content">
+            <div class="footer__icons">
+              <a href="#"
+                ><img
+                  class="footer-icon"
+                  src="./src/icons/facebook.svg"
+                  alt="facebook"
+              /></a>
+              <a href="#"
+                ><img
+                  class="footer-icon"
+                  src="./src/icons/twitter.svg"
+                  alt="twitter"
+              /></a>
+              <a href="#"
+                ><img
+                  class="footer-icon"
+                  src="./src/icons/pinterest.svg"
+                  alt="pinterest"
+              /></a>
+              <a href="#"
+                ><img
+                  class="footer-icon"
+                  src="./src/icons/instagram.svg"
+                  alt="instagram"
+              /></a>
+              <a href="#"
+                ><img
+                  class="footer-icon"
+                  src="./src/icons/github.svg"
+                  alt="github"
+              /></a>
+              <a href="#"
+                ><img class="footer-icon" src="./src/icons/rss.svg" alt="rss"
+              /></a>
             </div>
             <div class="footer__content-rights">© 2015 Axure Themes</div>
           </div>
