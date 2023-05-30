@@ -3,15 +3,14 @@
     height:4.7rem;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .header-nav{
     width: 40%;
-
 }
 .menu{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     height: 100%;
 }
@@ -20,5 +19,4 @@
     font-family: "Open Sans",sans-serif;
     font-size: 0.9rem;
     text-transform: capitalize;
-
 }
