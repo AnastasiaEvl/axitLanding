@@ -1,0 +1,63 @@
+.reviews{
+    padding-bottom: 6.5rem;
+}
+.reviews__content{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+.reviews_card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 40px;
+}
+.reviews__card-text{
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    background-color: #E2E2E2;
+    display: flex;
+    border-radius: 10px;
+    height: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #86878B;
+    padding: 2.4rem 1.6rem;
+    position: relative;
+}
+.reviews__card-text::after{
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #E2E2E2;
+    position: absolute;
+    content:'';
+    left: 20%;
+    top:99%;
+}
+.reviewer__profile{
+    display: flex;
+    gap:25px;
+}
+.reviewer__profile-inf{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.reviewer__profile-name{
+    font-family: "Open Sans", fantasy;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.reviewer__profile-position{
+    font-family: Raleway, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
