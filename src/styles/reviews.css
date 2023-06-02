@@ -3,19 +3,17 @@
 }
 .reviews__content{
     display: flex;
-    justify-content: center;
-    gap:30px;
+    justify-content: space-between;
+    gap:1.9rem;
 }
-.reviews_card{
+.reviews__card{
     display: flex;
     flex-direction: column;
-    position: relative;
-    gap: 40px;
+    gap: 2.5rem;
 }
 .reviews__card-text{
-    font-family: Raleway, sans-serif;
     font-weight: 400;
-    background-color: #E2E2E2;
+    background-color: var(--grey-for-message);
     display: flex;
     border-radius: 10px;
     height: 100%;
@@ -26,37 +24,33 @@
     position: relative;
 }
 .reviews__card-text::after{
+    content:'';
+    position: absolute;
     width: 0;
     height: 0;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-top: 25px solid #E2E2E2;
-    position: absolute;
-    content:'';
+    border-top: 25px solid var(--grey-for-message);
     left: 20%;
     top:99%;
 }
-.reviewer__profile{
+.client__profile{
     display: flex;
-    gap:25px;
+    gap:1.6rem;
 }
-.reviewer__profile-inf{
+.client__profile-info{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.9rem;
 }
-.reviewer__profile-name{
-    font-family: "Open Sans", fantasy;
-    font-size: 1.3rem;
+.client__profile-name{
     font-weight: 700;
     line-height: 2rem;
 }
-.reviewer__profile-position{
-    font-family: Raleway, sans-serif;
-    font-size: 1.1rem;
+.client__profile-position{
     font-weight: 400;
 }
-.avatar{
+.client__avatar{
     width: 70px;
     height: 70px;
     border-radius: 50%;
