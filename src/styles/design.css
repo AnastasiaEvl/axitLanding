@@ -1,0 +1,27 @@
+.design{
+    background-image: url(../assets/pictures/background-design.png);
+    min-height: 442px;
+    position: relative;
+    background-color: black;
+    background-size: contain;
+}
+.design::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+.section-header__title--white, .section-header__description--white{
+    color: white;
+}
+.section-header__line--white{
+    background-color:white;
+}
+.tabs__block-button--white{
+    position: relative;
+    z-index: 2;
+}
+

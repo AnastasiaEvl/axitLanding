@@ -70,3 +70,9 @@
   height: 100%;
   object-fit: cover;
 }
+.tabs__block-button--white{
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  display: block;
+  margin: 0 auto;
+}
