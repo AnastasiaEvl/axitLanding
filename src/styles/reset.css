@@ -5,14 +5,56 @@
 html{
   font-size: 16px;
 }
+:root{
+  --font-family-subtitle-btn:"Open Sans", fantasy;
+  --font-family-text-title:Raleway, sans-serif;
+  --unit-xs:0.9rem;   /*14px*/
+  --unit-s:1.1rem;    /*18px*/
+  --unit-m:1.5rem;    /*24px*/
+  --unit-l:1.9rem;    /*30px*/
+  --unit-xl:2.25rem;  /*36px*/
+  --black: black;
+  --white: #FFFFFF;
+  --dark-grey: #333333;
+  --light-grey:#c6cbcd;
+  --border-tabs: 1px solid #c6cbcd;
+  --border-white: 2px solid white;
+  --pink: #ec7979;
+  --light-grey-pricing:#F5F5F5;
+  --dark-grey-pricing: #FFFFFF80;
+  --middle-grey:#86878B;
+  --grey-for-message: #E2E2E2;
+}
 .wrapper{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 main {
   flex: auto;
 }
+li a,button,h3,h4 {
+  font-family: var(--font-family-subtitle-btn);
+}
+p,h2,ul {
+  font-family: var(--font-family-text-title);
+}
+
+li a, button{
+  font-size: var(--unit-xs);
+}
+h3{
+  font-size: var(--unit-l);
+}
+h4{
+  font-size: var(--unit-m);
+}
+p, ul{
+  font-size: var(--unit-s);
+}
+h2{
+  font-size: var(--unit-xl);
+}
+
 button {
   cursor: pointer;
 }

@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="./src/styles/tabs.css" />
     <link rel="stylesheet" href="./src/styles/awesome.css" />
     <link rel="stylesheet" href="./src/styles/pricing.css" />
+    <link rel="stylesheet" href="./src/styles/reviews.css" />
     <link rel="stylesheet" href="./src/styles/footer.css" />
     <title>AXIT</title>
   </head>
@@ -161,8 +162,8 @@
             <div class="pricing__content">
               <div class="pricing__card">
                 <ul class="pricing__card-header">
-                  <li class="pricing__card-title">basic</li>
-                  <li class="pricing__card-price">$10</li>
+                  <li class="pricing__card-title"><h4>basic</h4></li>
+                  <li class="pricing__card-price"><h3>$10</h3></li>
                 </ul>
                 <ul class="pricing__card-content">
                   <li class="pricing__card-content-subtitle">free for life</li>
@@ -176,8 +177,8 @@
               </div>
               <div class="pricing__card">
                 <ul class="pricing__card-header">
-                  <li class="pricing__card-title">basic</li>
-                  <li class="pricing__card-price">$20</li>
+                  <li class="pricing__card-title"><h4>optima</h4></li>
+                  <li class="pricing__card-price"><h3>$20</h3></li>
                 </ul>
                 <ul class="pricing__card-content">
                   <li class="pricing__card-content-subtitle">free for life</li>
@@ -191,8 +192,8 @@
               </div>
               <div class="pricing__card">
                 <ul class="pricing__card-header">
-                  <li class="pricing__card-title">basic</li>
-                  <li class="pricing__card-price">$30</li>
+                  <li class="pricing__card-title"><h4>pro</h4></li>
+                  <li class="pricing__card-price"><h3>$30</h3></li>
                 </ul>
                 <ul class="pricing__card-content">
                   <li class="pricing__card-content-subtitle">free for life</li>
@@ -207,43 +208,113 @@
             </div>
           </div>
         </section>
-        <footer class="footer">
-            <div class="footer__icons">
-              <a class = "footer__link" href="#"
-                ><img
-                  class="footer-icon"
-                  src="./src/icons/facebook.svg"
-                  alt="facebook"
-              /></a>
-              <a class = "footer__link" href="#"
-                ><img
-                  class="footer-icon"
-                  src="./src/icons/twitter.svg"
-                  alt="twitter"
-              /></a>
-              <a class = "footer__link" href="#"
-                ><img
-                  class="footer-icon"
-                  src="./src/icons/pinterest.svg"
-                  alt="pinterest"
-              /></a>
-              <a  class = "footer__link" href="#"
-                ><img
-                  class="footer-icon"
-                  src="./src/icons/instagram.svg"
-                  alt="instagram"
-              /></a>
-              <a class = "footer__link" href="#"
-                ><img
-                  class="footer-icon"
-                  src="./src/icons/github.svg"
-                  alt="github"
-              /></a>
-              <a class = "footer__link" href="#"
-                ><img class="footer-icon" src="./src/icons/rss.svg" alt="rss"
-              /></a>
+        <section class="reviews">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-header__title">
+                what our customers are saying
+              </h2>
+              <div class="section-header__line"></div>
+              <p class="section-header__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
             </div>
-            <div class="footer__content-rights">© 2015 Axure Themes</div>
+            <div class="reviews__content">
+              <article class="reviews__card">
+                <div class="reviews__card-text">
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Doloribus accusamus expedita repellat similique odio
+                  aspernatur ex, architecto eaque quo suscipit.</p>
+                </div>
+                <section class="client__profile">
+                  <img
+                    class="client__avatar"
+                    src="./src/icons/avatar_first_rev.png"
+                    alt="client avatar"
+                  />
+                  <div class="client__profile-info">
+                    <h4 class="client__profile-name">Davis Rhiel Madsen</h4>
+                    <p class="client__profile-position">Manager</p>
+                  </div>
+                </section>
+              </article>
+              <article class="reviews__card">
+                <div class="reviews__card-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Doloribus accusamus expedita repellat similique odio
+                  aspernatur ex, architecto eaque quo suscipit.</p>
+                </div>
+                <section class="client__profile">
+                  <img
+                    class="client__avatar"
+                    src="./src/icons/avatar_second_rev.png"
+                    alt="client avatar"
+                  />
+                  <div class="client__profile-info">
+                    <h4 class="client__profile-name">Jaydon Rosser</h4>
+                    <p class="client__profile-position">Manager</p>
+                  </div>
+                </section>
+              </article>
+              <article class="reviews__card">
+                <div class="reviews__card-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Doloribus accusamus expedita repellat similique odio
+                  aspernatur ex, architecto eaque quo suscipit.</p>
+                </div>
+                <section class="client__profile">
+                  <img
+                    class="client__avatar"
+                    src="./src/icons/avatar_third_rev.png"
+                    alt="client avatar"
+                  />
+                  <div class="client__profile-info">
+                    <h4 class="client__profile-name">Cooper Dorwart</h4>
+                    <p class="client__profile-position">Manager</p>
+                  </div>
+                </section>
+              </article>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer__icons">
+            <a class="footer__link" href="#"
+              ><img
+                class="footer-icon"
+                src="./src/icons/facebook.svg"
+                alt="facebook"
+            /></a>
+            <a class="footer__link" href="#"
+              ><img
+                class="footer-icon"
+                src="./src/icons/twitter.svg"
+                alt="twitter"
+            /></a>
+            <a class="footer__link" href="#"
+              ><img
+                class="footer-icon"
+                src="./src/icons/pinterest.svg"
+                alt="pinterest"
+            /></a>
+            <a class="footer__link" href="#"
+              ><img
+                class="footer-icon"
+                src="./src/icons/instagram.svg"
+                alt="instagram"
+            /></a>
+            <a class="footer__link" href="#"
+              ><img
+                class="footer-icon"
+                src="./src/icons/github.svg"
+                alt="github"
+            /></a>
+            <a class="footer__link" href="#"
+              ><img class="footer-icon" src="./src/icons/rss.svg" alt="rss"
+            /></a>
+          </div>
+          <div class="footer__content-rights"><p>© 2015 Axure Themes</p></div>
         </footer>
       </main>
     </div>
