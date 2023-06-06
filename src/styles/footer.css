@@ -8,12 +8,14 @@
     padding-bottom: 1.6rem;
     gap:1.25rem;
 }
-.footer__icons{
+.messenger-icons{
     display: flex;
+    align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 1.25rem;
 }
-.footer-icon{
+.messenger-icons__link{
     width: 3.32rem;
     height: 3.32rem;
 }
