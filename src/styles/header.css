@@ -10,10 +10,34 @@
 .header-nav{
     width: 40%;
 }
+.header__logo{
+    min-width: 84px;
+}
 .menu{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.menu li a {
+    line-height: 1;
+    position: relative;
+}
+
+.menu li a:after {
+    content: "";
+    background-color: var(--pink);
+    height: 2px;
+    top:2.5rem;
+    width: 0;
+    left: 50%;
+    position: absolute;
+    transition: width .3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.menu li a:hover:after,
+.menu li a:focus:after {
+    width: 100%;
 }
 .header-nav__section{
     color: var(--white);

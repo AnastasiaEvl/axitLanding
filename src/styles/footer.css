@@ -15,6 +15,13 @@
     flex-wrap: wrap;
     gap: 1.25rem;
 }
+.messenger-icons img{
+    transition: 0.5s;
+}
+.messenger-icons img:hover{
+    transition: 0.5s;
+    transform: scale(1.5,1.5);
+}
 .messenger-icons__link{
     width: 3.32rem;
     height: 3.32rem;
