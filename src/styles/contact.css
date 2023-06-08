@@ -1,0 +1,28 @@
+.banner__form-section--contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-form{
+    width: 100%;
+}
+.banner__form-inputs, .banner__form-message{
+    width: calc(100% / 2 - 30px);
+}
+.banner__form-box--contact{
+    padding: 0;
+}
+.banner__form-input--message{
+    padding-bottom: 2.1rem;
+}
+.banner__form-input--message:focus{
+    outline: none;
+    border-bottom: 2px solid #ec7979;
+}
+.banner__form-input--message:active{
+    outline: none;
+    border-bottom: 3px dashed #ec7979;
+}
+.tabs__block-button--contact{
+    width: 23rem;
+}
+

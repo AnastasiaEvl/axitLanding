@@ -59,6 +59,10 @@
   border: 0;
   margin-bottom: 3.4rem;
 }
+.tabs__block-button:hover{
+  background-color: #AB4949;
+  transition: 0.5s;
+}
 .tabs__block-picture {
   width: 50%;
   height: 100%;

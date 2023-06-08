@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="./src/styles/pricing.css" />
     <link rel="stylesheet" href="./src/styles/reviews.css" />
     <link rel="stylesheet" href="./src/styles/design.css" />
+    <link rel="stylesheet" href="./src/styles/contact.css" />
     <link rel="stylesheet" href="./src/styles/footer.css" />
     <title>AXIT</title>
   </head>
@@ -55,7 +56,9 @@
               <li>
                 <a href="#reviews" class="header-nav__section">reviews</a>
               </li>
-              <li><a href="#" class="header-nav__section">contact</a></li>
+              <li>
+                <a href="#contact" class="header-nav__section">contact</a>
+              </li>
             </ul>
           </nav>
         </header>
@@ -84,7 +87,12 @@
           </div>
 
           <div class="banner__form">
-            <form class="banner__form-box" action=" " method="post" id="banner-form">
+            <form
+              class="banner__form-box"
+              action=" "
+              method="post"
+              id="banner-form"
+            >
               <fieldset class="banner__form-section">
                 <legend class="banner__form-title">
                   <h4>Try Your <span>FREE</span> Trial Today</h4>
@@ -92,42 +100,46 @@
                 <label for="user-name" class="banner__form-label-input"
                   >name</label
                 >
-                  <input
-                    id="user-name"
-                    class="banner__form-input"
-                    type="text"
-                    name="name"
-                    placeholder="name"
-                    autocomplete="username"
-                    autofocus
-                    required
-                  />
+                <input
+                  id="user-name"
+                  class="banner__form-input"
+                  type="text"
+                  name="name"
+                  placeholder="name"
+                  autocomplete="username"
+                  autofocus
+                  required
+                />
                 <label for="user-email" class="banner__form-label-input"
                   >email</label
                 >
-                  <input
-                    id="user-email"
-                    class="banner__form-input"
-                    type="email"
-                    name="email"
-                    placeholder="email"
-                    autocomplete="email"
-                    required
-                  />
+                <input
+                  id="user-email"
+                  class="banner__form-input"
+                  type="email"
+                  name="email"
+                  placeholder="email"
+                  autocomplete="email"
+                  required
+                />
                 <label for="user-password" class="banner__form-label-input"
                   >password</label
                 >
-                  <input
-                    id="user-password"
-                    class="banner__form-input"
-                    type="password"
-                    name="password"
-                    placeholder="password"
-                    autocomplete="current-password"
-                    required
-                  />
+                <input
+                  id="user-password"
+                  class="banner__form-input"
+                  type="password"
+                  name="password"
+                  placeholder="password"
+                  autocomplete="current-password"
+                  required
+                />
               </fieldset>
-              <button type="submit" class="banner__form-button" form="banner-form">
+              <button
+                type="submit"
+                class="banner__form-button"
+                form="banner-form"
+              >
                 Get Started
               </button>
             </form>
@@ -441,6 +453,93 @@
               >
                 download
               </button>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-header__title">contact us</h2>
+              <div class="section-header__line"></div>
+              <p class="section-header__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+
+            <div class="contact-form">
+              <form
+                class="banner__form-box banner__form-box--contact"
+                action=" "
+                method="post"
+                id="contact-form"
+              >
+                <fieldset
+                  class="banner__form-section banner__form-section--contact"
+                >
+                  <legend class="banner__form-title">
+                    <h2 class="banner__form-name">Contact form</h2>
+                  </legend>
+                  <div class="banner__form-inputs">
+                    <label for="contact-name" class="banner__form-label-input"
+                      >name</label
+                    >
+                    <input
+                      id="contact-name"
+                      class="banner__form-input"
+                      type="text"
+                      name="contact-name"
+                      placeholder="name"
+                      autocomplete="username"
+                      autofocus
+                      required
+                    />
+                    <label for="contact-email" class="banner__form-label-input"
+                      >email</label
+                    >
+                    <input
+                      id="contact-email"
+                      class="banner__form-input"
+                      type="email"
+                      name="contact-email"
+                      placeholder="email"
+                      autocomplete="email"
+                      required
+                    />
+                    <label
+                      for="contact-password"
+                      class="banner__form-label-input"
+                      >password</label
+                    >
+                    <input
+                      id="contact-password"
+                      class="banner__form-input"
+                      type="password"
+                      name="contact-password"
+                      placeholder="password"
+                      autocomplete="current-password"
+                      required
+                    />
+                  </div>
+                  <div class="banner__form-message">
+                    <label for="message"></label>
+                    <textarea
+                      class="banner__form-input banner__form-input--message"
+                      id="message"
+                      name="message"
+                      rows="8"
+                      cols="50"
+                      placeholder="message"
+                    ></textarea>
+                  </div>
+                </fieldset>
+                <button
+                  type="submit"
+                  class="tabs__block-button tabs__block-button--contact"
+                  form="contact-form"
+                >
+                  Send Message
+                </button>
+              </form>
             </div>
           </div>
         </section>

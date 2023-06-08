@@ -27,5 +27,11 @@
     border: 2px solid white;
     width: 23rem;
 }
+.tabs__block-button--white:hover{
+    background-color: transparent;
+    transition: 0.5s;
+    border: 2px solid #EC7979;
+    color: #EC7979;
+}
 
 

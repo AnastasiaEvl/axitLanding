@@ -81,6 +81,10 @@ input:active{
     border: none;
 
 }
+.banner__form-button:hover{
+    background-color: #AB4949;
+    transition: 0.5s;
+}
 .banner__form-section{
     border: none;
     padding-bottom: 5rem;
@@ -101,4 +105,3 @@ input:active{
     font-size: var(--unit-xs);
     color: #BDBDBD;
 }
-

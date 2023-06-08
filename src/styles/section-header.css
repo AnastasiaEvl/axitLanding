@@ -19,3 +19,6 @@
     color: var(--middle-grey);
     padding-top:2rem;
 }
+.banner__form-name{
+    display: none;
+}
