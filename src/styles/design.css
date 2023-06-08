@@ -3,7 +3,7 @@
     min-height: 442px;
     position: relative;
     background-color: black;
-    background-size: contain;
+    background-size: cover;
 }
 .design::after{
     content: '';
@@ -23,5 +23,9 @@
 .tabs__block-button--white{
     position: relative;
     z-index: 2;
+    background-color: transparent;
+    border: 2px solid white;
+    width: 23rem;
 }
+
 
