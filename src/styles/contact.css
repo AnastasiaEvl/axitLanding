@@ -13,6 +13,7 @@
 }
 .banner__form-input--message{
     padding-bottom: 2.1rem;
+    resize:none;
 }
 .banner__form-input--message:focus{
     outline: none;
