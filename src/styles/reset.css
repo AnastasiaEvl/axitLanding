@@ -79,3 +79,21 @@ a:hover{
   color: var(--pink);
   transition: 0.5s;
 }
+.button {
+  margin-top: 2rem;
+  width: 16.9rem;
+  height: 3.6rem;
+  background-color: var(--pink);
+  text-align: center;
+  color: var(--white);
+  text-transform: capitalize;
+  font-size: var(--unit-s);
+  line-height: 1.6;
+  font-weight: 600;
+  border: 0;
+  margin-bottom: 3.4rem;
+}
+.button:hover{
+  background-color: #AB4949;
+  transition: 0.5s;
+}

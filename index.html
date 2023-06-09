@@ -47,7 +47,7 @@
         <header class="header">
           <img class="header__logo" src="./src/icons/logo.svg" alt="axit" />
           <nav class="header-nav">
-            <ul class="menu">
+            <ul class="header-nav__menu">
               <li><a href="#tabs" class="header-nav__section">features</a></li>
               <li><a href="#awesome" class="header-nav__section">about</a></li>
               <li>
@@ -78,31 +78,25 @@
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </p>
-            <button
-              type="button"
-              class="tabs__block-button tabs__block-button--white"
-            >
-              download
-            </button>
+            <button type="button" class="button button--white">download</button>
           </div>
-
-          <div class="banner__form">
+          <div class="user-data-form">
             <form
-              class="banner__form-box"
+              class="user-data-form__box"
               action=" "
               method="post"
               id="banner-form"
             >
-              <fieldset class="banner__form-section">
-                <legend class="banner__form-title">
+              <fieldset class="user-data-form__section">
+                <legend class="user-data-form__title">
                   <h4>Try Your <span>FREE</span> Trial Today</h4>
                 </legend>
-                <label for="user-name" class="banner__form-label-input"
+                <label for="user-name" class="user-data-form__label-input"
                   >name</label
                 >
                 <input
                   id="user-name"
-                  class="banner__form-input"
+                  class="user-data-form__input"
                   type="text"
                   name="name"
                   placeholder="name"
@@ -110,24 +104,24 @@
                   autofocus
                   required
                 />
-                <label for="user-email" class="banner__form-label-input"
+                <label for="user-email" class="user-data-form__label-input"
                   >email</label
                 >
                 <input
                   id="user-email"
-                  class="banner__form-input"
+                  class="user-data-form__input"
                   type="email"
                   name="email"
                   placeholder="email"
                   autocomplete="email"
                   required
                 />
-                <label for="user-password" class="banner__form-label-input"
+                <label for="user-password" class="user-data-form__label-input"
                   >password</label
                 >
                 <input
                   id="user-password"
-                  class="banner__form-input"
+                  class="user-data-form__input"
                   type="password"
                   name="password"
                   placeholder="password"
@@ -137,7 +131,7 @@
               </fieldset>
               <button
                 type="submit"
-                class="banner__form-button"
+                class="user-data-form__button"
                 form="banner-form"
               >
                 Get Started
@@ -230,9 +224,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Aenean euismod bibendum laoreet.
                 </p>
-                <button type="button" class="tabs__block-button">
-                  download
-                </button>
+                <button type="button" class="button">download</button>
               </div>
               <div class="tabs__block-picture">
                 <img
@@ -447,10 +439,7 @@
                 Use the sections you need, remove the ones you don't. Create
                 gorgeous prototypes faster than ever!
               </p>
-              <button
-                type="button"
-                class="tabs__block-button tabs__block-button--white"
-              >
+              <button type="button" class="button button--white">
                 download
               </button>
             </div>
@@ -465,27 +454,28 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
-
             <div class="contact-form">
               <form
-                class="banner__form-box banner__form-box--contact"
+                class="user-data-form__box user-data-form__box--contact"
                 action=" "
                 method="post"
                 id="contact-form"
               >
                 <fieldset
-                  class="banner__form-section banner__form-section--contact"
+                  class="user-data-form__section user-data-form__section--contact"
                 >
-                  <legend class="banner__form-title">
-                    <h2 class="banner__form-name">Contact form</h2>
+                  <legend class="user-data-form__title">
+                    <h2 class="user-data-form__name">Contact form</h2>
                   </legend>
-                  <div class="banner__form-inputs">
-                    <label for="contact-name" class="banner__form-label-input"
+                  <div class="user-data-form__inputs">
+                    <label
+                      for="contact-name"
+                      class="user-data-form__label-input"
                       >name</label
                     >
                     <input
                       id="contact-name"
-                      class="banner__form-input"
+                      class="user-data-form__input"
                       type="text"
                       name="contact-name"
                       placeholder="name"
@@ -493,12 +483,14 @@
                       autofocus
                       required
                     />
-                    <label for="contact-email" class="banner__form-label-input"
+                    <label
+                      for="contact-email"
+                      class="user-data-form__label-input"
                       >email</label
                     >
                     <input
                       id="contact-email"
-                      class="banner__form-input"
+                      class="user-data-form__input"
                       type="email"
                       name="contact-email"
                       placeholder="email"
@@ -507,12 +499,12 @@
                     />
                     <label
                       for="contact-password"
-                      class="banner__form-label-input"
+                      class="user-data-form__label-input"
                       >password</label
                     >
                     <input
                       id="contact-password"
-                      class="banner__form-input"
+                      class="user-data-form__input"
                       type="password"
                       name="contact-password"
                       placeholder="password"
@@ -520,10 +512,10 @@
                       required
                     />
                   </div>
-                  <div class="banner__form-message">
+                  <div class="user-data-form__message">
                     <label for="message"></label>
                     <textarea
-                      class="banner__form-input banner__form-input--message"
+                      class="user-data-form__input user-data-form__input--message"
                       id="message"
                       name="message"
                       rows="8"
@@ -534,7 +526,7 @@
                 </fieldset>
                 <button
                   type="submit"
-                  class="tabs__block-button tabs__block-button--contact"
+                  class="button button--contact"
                   form="contact-form"
                 >
                   Send Message

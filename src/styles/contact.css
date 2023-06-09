@@ -1,25 +1,25 @@
-.banner__form-section--contact{
+.user-data-form__section--contact{
     display: flex;
     justify-content: space-evenly;
 }
 .contact-form{
     width: 100%;
 }
-.banner__form-inputs, .banner__form-message{
+.user-data-form__inputs, .user-data-form__message{
     width: calc(100% / 2 - 30px);
 }
-.banner__form-box--contact{
+.user-data-form__box--contact{
     padding: 0;
 }
-.banner__form-input--message{
+.user-data-form__input--message{
     padding-bottom: 2.1rem;
     resize:none;
 }
-.banner__form-input--message:focus{
+.user-data-form__input--message:focus{
     outline: none;
     border-bottom: 2px solid #ec7979;
 }
-.banner__form-input--message:active{
+.user-data-form__input--message:active{
     outline: none;
     border-bottom: 3px dashed #ec7979;
 }
