@@ -27,11 +27,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/shared/form.css"/>
+    <link rel="stylesheet" href="src/styles/shared/button.css"/>
+    <link rel="stylesheet" href="src/styles/shared/messenger-icons.css"/>
     <link rel="stylesheet" href="./src/styles/container.css" />
     <link rel="stylesheet" href="./src/styles/header.css" />
     <link rel="stylesheet" href="./src/styles/banner.css" />
     <link rel="stylesheet" href="./src/styles/social.css" />
-    <link rel="stylesheet" href="./src/styles/section-header.css" />
+    <link rel="stylesheet" href="src/styles/shared/section-header.css" />
     <link rel="stylesheet" href="./src/styles/tabs.css" />
     <link rel="stylesheet" href="./src/styles/awesome.css" />
     <link rel="stylesheet" href="./src/styles/pricing.css" />
@@ -45,7 +48,7 @@
     <div class="wrapper">
       <main>
         <header class="header">
-          <img class="header__logo" src="./src/icons/logo.svg" alt="axit" />
+          <a href="#"><img class="header__logo" src="./src/icons/logo.svg" alt="axit" /></a>
           <nav class="header-nav">
             <ul class="header-nav__menu">
               <li><a href="#tabs" class="header-nav__section">features</a></li>
@@ -80,23 +83,23 @@
             </p>
             <button type="button" class="button button--white">download</button>
           </div>
-          <div class="user-data-form">
+          <div class="banner__form">
             <form
-              class="user-data-form__box"
+              class="form"
               action=" "
               method="post"
               id="banner-form"
             >
-              <fieldset class="user-data-form__section">
-                <legend class="user-data-form__title">
-                  <h4>Try Your <span>FREE</span> Trial Today</h4>
+              <fieldset class="form__section">
+                <legend class="form__title">
+                  <h4>Try Your <span class="form__title form__title--color">FREE</span> Trial Today</h4>
                 </legend>
-                <label for="user-name" class="user-data-form__label-input"
+                <label for="user-name" class="form__label"
                   >name</label
                 >
                 <input
                   id="user-name"
-                  class="user-data-form__input"
+                  class="form__input"
                   type="text"
                   name="name"
                   placeholder="name"
@@ -104,24 +107,24 @@
                   autofocus
                   required
                 />
-                <label for="user-email" class="user-data-form__label-input"
+                <label for="user-email" class="form__label"
                   >email</label
                 >
                 <input
                   id="user-email"
-                  class="user-data-form__input"
+                  class="form__input"
                   type="email"
                   name="email"
                   placeholder="email"
                   autocomplete="email"
                   required
                 />
-                <label for="user-password" class="user-data-form__label-input"
+                <label for="user-password" class="form__label"
                   >password</label
                 >
                 <input
                   id="user-password"
-                  class="user-data-form__input"
+                  class="form__input"
                   type="password"
                   name="password"
                   placeholder="password"
@@ -131,7 +134,7 @@
               </fieldset>
               <button
                 type="submit"
-                class="user-data-form__button"
+                class="button form__button"
                 form="banner-form"
               >
                 Get Started
@@ -173,19 +176,19 @@
             /></a>
             <a class="messenger-icons__link" href="#"
               ><img
-                class="messenger-icons__img--social"
+                class="messenger-icons__img messenger-icons__img--social"
                 src="./src/icons/instagram.svg"
                 alt="instagram"
             /></a>
             <a class="messenger-icons__link" href="#"
               ><img
-                class="messenger-icons__img--social"
+                class="messenger-icons__img messenger-icons__img--social"
                 src="./src/icons/github.svg"
                 alt="github"
             /></a>
             <a class="messenger-icons__link" href="#"
               ><img
-                class="messenger-icons__img--social"
+                class="messenger-icons__img messenger-icons__img--social"
                 src="./src/icons/rss.svg"
                 alt="rss"
             /></a>
@@ -454,28 +457,28 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
-            <div class="contact-form">
+            <div class="contact__form-box">
               <form
-                class="user-data-form__box user-data-form__box--contact"
+                class="form form-contact"
                 action=" "
                 method="post"
                 id="contact-form"
               >
                 <fieldset
-                  class="user-data-form__section user-data-form__section--contact"
+                  class="form__section section-contact"
                 >
-                  <legend class="user-data-form__title">
+                  <legend class="form__title">
                     <h2 class="user-data-form__name">Contact form</h2>
                   </legend>
-                  <div class="user-data-form__inputs">
+                  <div class="contact__inputs">
                     <label
                       for="contact-name"
-                      class="user-data-form__label-input"
+                      class="form__label"
                       >name</label
                     >
                     <input
                       id="contact-name"
-                      class="user-data-form__input"
+                      class="form__input"
                       type="text"
                       name="contact-name"
                       placeholder="name"
@@ -485,12 +488,12 @@
                     />
                     <label
                       for="contact-email"
-                      class="user-data-form__label-input"
+                      class="form__label"
                       >email</label
                     >
                     <input
                       id="contact-email"
-                      class="user-data-form__input"
+                      class="form__input"
                       type="email"
                       name="contact-email"
                       placeholder="email"
@@ -499,12 +502,12 @@
                     />
                     <label
                       for="contact-password"
-                      class="user-data-form__label-input"
+                      class="form__label"
                       >password</label
                     >
                     <input
                       id="contact-password"
-                      class="user-data-form__input"
+                      class="form__input"
                       type="password"
                       name="contact-password"
                       placeholder="password"
@@ -512,10 +515,10 @@
                       required
                     />
                   </div>
-                  <div class="user-data-form__message">
-                    <label for="message"></label>
+                  <div class="contact__message">
+                    <label for="message" class="form__label">message</label>
                     <textarea
-                      class="user-data-form__input user-data-form__input--message"
+                      class="form__input input-message"
                       id="message"
                       name="message"
                       rows="8"
@@ -526,7 +529,7 @@
                 </fieldset>
                 <button
                   type="submit"
-                  class="button button--contact"
+                  class="button"
                   form="contact-form"
                 >
                   Send Message
@@ -536,7 +539,7 @@
           </div>
         </section>
         <footer class="footer">
-          <div class="messenger-icons">
+          <address class="messenger-icons">
             <a class="messenger-icons__link" href="#"
               ><img
                 class="messenger-icons__img"
@@ -576,8 +579,8 @@
             <a class="messenger-icons__link" href="#"
               ><img class="footer-icon" src="./src/icons/rss.svg" alt="rss"
             /></a>
-          </div>
-          <div class="footer__content-rights"><p>© 2015 Axure Themes</p></div>
+          </address>
+          <p>© 2015 Axure Themes</p>
         </footer>
       </main>
     </div>

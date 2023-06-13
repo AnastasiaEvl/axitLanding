@@ -7,25 +7,9 @@
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
     gap:1.25rem;
+    color: var(--white);
 }
-.messenger-icons{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 3rem;
-}
-.messenger-icons img{
-    transition: 0.5s;
-}
-.messenger-icons img:hover{
-    transition: 0.5s;
-    transform: scale(1.5,1.5);
-}
-.messenger-icons__link{
-    width: 3.32rem;
-    height: 3.32rem;
-}
+
 .footer__content-rights{
     color: rgba(255, 255, 255, 0.5);
 }

@@ -22,3 +22,9 @@
 .banner__form-name{
     display: none;
 }
+.section-header__title--white, .section-header__description--white{
+    color: white;
+}
+.section-header__line--white{
+    background-color:white;
+}

@@ -14,24 +14,6 @@
     bottom: 0;
     background: rgba(0,0,0,0.5);
 }
-.section-header__title--white, .section-header__description--white{
-    color: white;
-}
-.section-header__line--white{
-    background-color:white;
-}
-.button--white{
-    position: relative;
-    z-index: 2;
-    background-color: transparent;
-    border: 2px solid white;
-    width: 23rem;
-}
-.button--white:hover{
-    background-color: transparent;
-    transition: 0.5s;
-    border: 2px solid #EC7979;
-    color: #EC7979;
-}
+
 
 

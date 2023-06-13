@@ -1,5 +1,6 @@
 #reviews{
     padding-bottom: 6.5rem;
+    scroll-margin-top: 1.25rem;
 }
 .reviews__content{
     display: flex;
