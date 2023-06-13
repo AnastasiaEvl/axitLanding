@@ -27,15 +27,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/shared/form.css"/>
+    <link rel="stylesheet" href="src/styles/shared/button.css"/>
+    <link rel="stylesheet" href="src/styles/shared/messenger-icons.css"/>
     <link rel="stylesheet" href="./src/styles/container.css" />
     <link rel="stylesheet" href="./src/styles/header.css" />
+    <link rel="stylesheet" href="./src/styles/banner.css" />
     <link rel="stylesheet" href="./src/styles/social.css" />
-    <link rel="stylesheet" href="./src/styles/section-header.css" />
+    <link rel="stylesheet" href="src/styles/shared/section-header.css" />
     <link rel="stylesheet" href="./src/styles/tabs.css" />
     <link rel="stylesheet" href="./src/styles/awesome.css" />
     <link rel="stylesheet" href="./src/styles/pricing.css" />
     <link rel="stylesheet" href="./src/styles/reviews.css" />
     <link rel="stylesheet" href="./src/styles/design.css" />
+    <link rel="stylesheet" href="./src/styles/contact.css" />
     <link rel="stylesheet" href="./src/styles/footer.css" />
     <title>AXIT</title>
   </head>
@@ -43,63 +48,149 @@
     <div class="wrapper">
       <main>
         <header class="header">
-          <img class="header__logo" src="./src/icons/logo.svg" alt="axit" />
+          <a href="#"><img class="header__logo" src="./src/icons/logo.svg" alt="axit" /></a>
           <nav class="header-nav">
-            <ul class="menu">
+            <ul class="header-nav__menu">
               <li><a href="#tabs" class="header-nav__section">features</a></li>
               <li><a href="#awesome" class="header-nav__section">about</a></li>
-              <li><a href="#pricing" class="header-nav__section">pricing</a></li>
-              <li><a href="#reviews" class="header-nav__section">reviews</a></li>
-              <li><a href="#" class="header-nav__section">contact</a></li>
+              <li>
+                <a href="#pricing" class="header-nav__section">pricing</a>
+              </li>
+              <li>
+                <a href="#reviews" class="header-nav__section">reviews</a>
+              </li>
+              <li>
+                <a href="#contact" class="header-nav__section">contact</a>
+              </li>
             </ul>
           </nav>
         </header>
+        <section class="banner">
+          <div class="section-header section-header--banner">
+            <img
+              class="header__logo header__logo--huge"
+              src="./src/icons/logo.svg"
+              alt="axit"
+            />
+            <h1 class="section-header__title section-header__title--white">
+              MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+            </h1>
+            <div class="section-header__line section-header__line--white"></div>
+            <p
+              class="section-header__description section-header__description--white"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+            <button type="button" class="button button--white">download</button>
+          </div>
+          <div class="banner__form">
+            <form
+              class="form"
+              action=" "
+              method="post"
+              id="banner-form"
+            >
+              <fieldset class="form__section">
+                <legend class="form__title">
+                  <h4>Try Your <span class="form__title form__title--color">FREE</span> Trial Today</h4>
+                </legend>
+                <label for="user-name" class="form__label"
+                  >name</label
+                >
+                <input
+                  id="user-name"
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  placeholder="name"
+                  autocomplete="username"
+                  autofocus
+                  required
+                />
+                <label for="user-email" class="form__label"
+                  >email</label
+                >
+                <input
+                  id="user-email"
+                  class="form__input"
+                  type="email"
+                  name="email"
+                  placeholder="email"
+                  autocomplete="email"
+                  required
+                />
+                <label for="user-password" class="form__label"
+                  >password</label
+                >
+                <input
+                  id="user-password"
+                  class="form__input"
+                  type="password"
+                  name="password"
+                  placeholder="password"
+                  autocomplete="current-password"
+                  required
+                />
+              </fieldset>
+              <button
+                type="submit"
+                class="button form__button"
+                form="banner-form"
+              >
+                Get Started
+              </button>
+            </form>
+          </div>
+        </section>
         <section class="social">
           <h2 class="section__title">Social Media Section with links</h2>
           <div class="social__content">
             <h3 class="social__content-title">Social Media</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <p>Aenean euismod bibendum laoreet.</p>
-         </div>
+          </div>
           <div class="messenger-icons">
             <a class="messenger-icons__link" href="#"
-            ><img
-                    class="messenger-icons__img messenger-icons__img--social"
-                    src="./src/icons/facebook.svg"
-                    alt="facebook"
+              ><img
+                class="messenger-icons__img messenger-icons__img--social"
+                src="./src/icons/facebook.svg"
+                alt="facebook"
             /></a>
             <a class="messenger-icons__link" href="#"
-            ><img
-                    class="messenger-icons__img messenger-icons__img--social"
-                    src="./src/icons/linkedin.svg"
-                    alt="linkedIn"
+              ><img
+                class="messenger-icons__img messenger-icons__img--social"
+                src="./src/icons/linkedin.svg"
+                alt="linkedIn"
             /></a>
             <a class="messenger-icons__link" href="#"
-            ><img
-                    class="mmessenger-icons__img messenger-icons__img--social"
-                    src="./src/icons/twitter.svg"
-                    alt="twitter"
+              ><img
+                class="messenger-icons__img messenger-icons__img--social"
+                src="./src/icons/twitter.svg"
+                alt="twitter"
             /></a>
             <a class="messenger-icons__link" href="#"
-            ><img
-                    class="messenger-icons__img messenger-icons__img--social"
-                    src="./src/icons/pinterest.svg"
-                    alt="pinterest"
+              ><img
+                class="messenger-icons__img messenger-icons__img--social"
+                src="./src/icons/pinterest.svg"
+                alt="pinterest"
             /></a>
             <a class="messenger-icons__link" href="#"
-            ><img
-                    class="messenger-icons__img--social"
-                    src="./src/icons/instagram.svg"
-                    alt="instagram"
+              ><img
+                class="messenger-icons__img messenger-icons__img--social"
+                src="./src/icons/instagram.svg"
+                alt="instagram"
             /></a>
             <a class="messenger-icons__link" href="#"
-            ><img
-                    class="messenger-icons__img--social"
-                    src="./src/icons/github.svg"
-                    alt="github"
+              ><img
+                class="messenger-icons__img messenger-icons__img--social"
+                src="./src/icons/github.svg"
+                alt="github"
             /></a>
             <a class="messenger-icons__link" href="#"
-            ><img class="messenger-icons__img--social" src="./src/icons/rss.svg" alt="rss"
+              ><img
+                class="messenger-icons__img messenger-icons__img--social"
+                src="./src/icons/rss.svg"
+                alt="rss"
             /></a>
           </div>
         </section>
@@ -136,9 +227,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Aenean euismod bibendum laoreet.
                 </p>
-                <button type="button" class="tabs__block-button">
-                  download
-                </button>
+                <button type="button" class="button">download</button>
               </div>
               <div class="tabs__block-picture">
                 <img
@@ -276,9 +365,10 @@
                 <h3 class="section__title">Text of user review</h3>
                 <div class="reviews__card-text">
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloribus accusamus expedita repellat similique odio
-                  aspernatur ex, architecto eaque quo suscipit.</p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloribus accusamus expedita repellat similique odio
+                    aspernatur ex, architecto eaque quo suscipit.
+                  </p>
                 </div>
                 <section class="client__profile">
                   <img
@@ -295,9 +385,11 @@
               <article class="reviews__card">
                 <h3 class="section__title">Text of user review</h3>
                 <div class="reviews__card-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloribus accusamus expedita repellat similique odio
-                  aspernatur ex, architecto eaque quo suscipit.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloribus accusamus expedita repellat similique odio
+                    aspernatur ex, architecto eaque quo suscipit.
+                  </p>
                 </div>
                 <section class="client__profile">
                   <img
@@ -314,9 +406,11 @@
               <article class="reviews__card">
                 <h3 class="section__title">Text of user review</h3>
                 <div class="reviews__card-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloribus accusamus expedita repellat similique odio
-                  aspernatur ex, architecto eaque quo suscipit.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloribus accusamus expedita repellat similique odio
+                    aspernatur ex, architecto eaque quo suscipit.
+                  </p>
                 </div>
                 <section class="client__profile">
                   <img
@@ -334,19 +428,118 @@
           </div>
         </section>
         <section class="design">
-          <div class="section-header">
-            <h2 class="section-header__title section-header__title--white">
-              STYLISH AXURE DESIGN
-            </h2>
-            <div class="section-header__line section-header__line--white"></div>
-            <p class="section-header__description section-header__description--white">
-              Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!
-            </p>
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-header__title section-header__title--white">
+                STYLISH AXURE DESIGN
+              </h2>
+              <div
+                class="section-header__line section-header__line--white"
+              ></div>
+              <p
+                class="section-header__description section-header__description--white"
+              >
+                Use the sections you need, remove the ones you don't. Create
+                gorgeous prototypes faster than ever!
+              </p>
+              <button type="button" class="button button--white">
+                download
+              </button>
+            </div>
           </div>
-          <button type="button" class="tabs__block-button tabs__block-button--white">download</button>
+        </section>
+        <section id="contact">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-header__title">contact us</h2>
+              <div class="section-header__line"></div>
+              <p class="section-header__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="contact__form-box">
+              <form
+                class="form form-contact"
+                action=" "
+                method="post"
+                id="contact-form"
+              >
+                <fieldset
+                  class="form__section section-contact"
+                >
+                  <legend class="form__title">
+                    <h2 class="user-data-form__name">Contact form</h2>
+                  </legend>
+                  <div class="contact__inputs">
+                    <label
+                      for="contact-name"
+                      class="form__label"
+                      >name</label
+                    >
+                    <input
+                      id="contact-name"
+                      class="form__input"
+                      type="text"
+                      name="contact-name"
+                      placeholder="name"
+                      autocomplete="username"
+                      autofocus
+                      required
+                    />
+                    <label
+                      for="contact-email"
+                      class="form__label"
+                      >email</label
+                    >
+                    <input
+                      id="contact-email"
+                      class="form__input"
+                      type="email"
+                      name="contact-email"
+                      placeholder="email"
+                      autocomplete="email"
+                      required
+                    />
+                    <label
+                      for="contact-password"
+                      class="form__label"
+                      >password</label
+                    >
+                    <input
+                      id="contact-password"
+                      class="form__input"
+                      type="password"
+                      name="contact-password"
+                      placeholder="password"
+                      autocomplete="current-password"
+                      required
+                    />
+                  </div>
+                  <div class="contact__message">
+                    <label for="message" class="form__label">message</label>
+                    <textarea
+                      class="form__input input-message"
+                      id="message"
+                      name="message"
+                      rows="8"
+                      cols="50"
+                      placeholder="message"
+                    ></textarea>
+                  </div>
+                </fieldset>
+                <button
+                  type="submit"
+                  class="button"
+                  form="contact-form"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
         </section>
         <footer class="footer">
-          <div class="messenger-icons">
+          <address class="messenger-icons">
             <a class="messenger-icons__link" href="#"
               ><img
                 class="messenger-icons__img"
@@ -354,10 +547,10 @@
                 alt="facebook"
             /></a>
             <a class="messenger-icons__link" href="#"
-            ><img
-                    class="messenger-icons__img"
-                    src="./src/icons/linkedin.svg"
-                    alt="linkedIn"
+              ><img
+                class="messenger-icons__img"
+                src="./src/icons/linkedin.svg"
+                alt="linkedIn"
             /></a>
             <a class="messenger-icons__link" href="#"
               ><img
@@ -386,8 +579,8 @@
             <a class="messenger-icons__link" href="#"
               ><img class="footer-icon" src="./src/icons/rss.svg" alt="rss"
             /></a>
-          </div>
-          <div class="footer__content-rights"><p>© 2015 Axure Themes</p></div>
+          </address>
+          <p>© 2015 Axure Themes</p>
         </footer>
       </main>
     </div>

@@ -1,10 +1,10 @@
 .social{
-    padding: 5.6rem 0.9rem 1.1rem;
+    padding: 1rem 0.9rem 1.1rem;
     background-color: #F8EFEF;
     display: flex;
     justify-content:center;
     align-content: center;
-
+    gap: 2rem;
 }
 .social__content-title{
     padding-bottom: 2rem;
@@ -12,8 +12,3 @@
 .social__content p {
     color: var(--middle-grey);
  }
-
-.messenger-icons__img--social{
-    width: 4.4rem;
-    height: 4.4rem;
-}

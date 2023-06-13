@@ -1,0 +1,23 @@
+#contact{
+    scroll-margin-top: 1.25rem;
+    padding-bottom: 3rem;
+}
+.contact__form-box{
+    width: 100%;
+}
+.contact__inputs, .contact__message{
+    width: calc(100% / 2 - 30px);
+}
+.section-contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+.form-contact{
+    padding: 0;
+}
+.input-message{
+    padding-bottom: 2.1rem;
+    resize:none;
+}
+
+

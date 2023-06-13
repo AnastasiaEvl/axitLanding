@@ -1,6 +1,7 @@
 #pricing{
     background:var(--light-grey-pricing);
     padding-bottom: 6.5rem;
+    scroll-margin-top: 1.25rem;
 }
 .pricing__content{
     display: flex;

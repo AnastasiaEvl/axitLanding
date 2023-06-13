@@ -3,7 +3,7 @@
     min-height: 442px;
     position: relative;
     background-color: black;
-    background-size: contain;
+    background-size: cover;
 }
 .design::after{
     content: '';
@@ -14,14 +14,6 @@
     bottom: 0;
     background: rgba(0,0,0,0.5);
 }
-.section-header__title--white, .section-header__description--white{
-    color: white;
-}
-.section-header__line--white{
-    background-color:white;
-}
-.tabs__block-button--white{
-    position: relative;
-    z-index: 2;
-}
+
+
 

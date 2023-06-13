@@ -1,5 +1,6 @@
 #awesome{
     padding-bottom: 3.2rem;
+    scroll-margin-top: 15px;
 }
 .awesome__content-box {
     font-size: 0;
