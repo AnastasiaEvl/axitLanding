@@ -1,6 +1,6 @@
 #awesome{
     padding-bottom: 3.2rem;
-    scroll-margin-top: 15px;
+    scroll-margin-top: 0.9rem;
 }
 .awesome__content-box {
     font-size: 0;
@@ -19,5 +19,21 @@
     line-height: 1.3;
     margin-bottom: 1.25rem;
 }
-
+@media (max-width: 750px) {
+    .awesome__content-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .awesome__card {
+        width: 100%;
+    }
+    #awesome{
+        scroll-margin-top: 4rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    #awesome{
+        scroll-margin-top: 5rem;
+    }
+}
 
