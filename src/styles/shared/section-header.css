@@ -28,3 +28,10 @@
 .section-header__line--white{
     background-color:white;
 }
+@media (max-width: 750px) {
+    .section-header {
+        text-align: center;
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+}

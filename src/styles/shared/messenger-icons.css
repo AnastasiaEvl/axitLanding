@@ -13,8 +13,30 @@
     transform: scale(1.2,1.2);
 }
 .messenger-icons__img--social{
-    min-width: 4.3rem;
+    width: 4.3rem;
 }
 .messenger-icons__img{
-    min-width: 3.3rem;
+    width: 3.3rem;
 }
+
+@media (max-width: 1024px) {
+    .messenger-icons {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 100%;
+        gap:1rem;
+    }
+    .messenger-icons__img{
+        width: 3.8rem;
+    }
+    .messenger-icons__img--social{
+        width:5.3rem;
+    }
+}
+@media (max-width: 750px) {
+    .messenger-icons__img{
+        width:2.2rem;
+    }
+}
+
+

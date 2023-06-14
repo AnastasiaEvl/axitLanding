@@ -12,3 +12,11 @@
 .social__content p {
     color: var(--middle-grey);
  }
+
+@media (max-width: 750px) {
+    .social {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
