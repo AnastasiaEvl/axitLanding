@@ -65,6 +65,12 @@
 .slider__nav {display: none;
 }
 
+@media (max-width: 1024px) {
+    #reviews{
+        scroll-margin-top: 5rem;
+    }
+}
+
 @media (max-width: 750px) {
     .reviews__slider {
         position: relative;
@@ -149,13 +155,5 @@
     }
     .container{
         height: auto;
-    }
-    #reviews{
-        scroll-margin-top: 4rem;
-    }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-    #reviews{
-        scroll-margin-top: 5rem;
     }
 }

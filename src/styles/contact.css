@@ -20,6 +20,13 @@
     resize:none;
 }
 
+
+@media (max-width: 1024px) {
+    #contact{
+        scroll-margin-top: 5rem;
+    }
+}
+
 @media (max-width: 750px) {
   .section-contact{
       flex-direction: column;
@@ -27,12 +34,5 @@
     .contact__inputs, .contact__message{
         width: 100%;
     }
-    #contact{
-        scroll-margin-top: 4rem;
-    }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-    #contact{
-        scroll-margin-top: 5rem;
-    }
-}
+

@@ -10,9 +10,7 @@
 .header__burger{
     display: none;
 }
-.header input{
-    display: none;
-}
+
 .header-nav{
     width: 40%;
 }
@@ -50,6 +48,8 @@
     color: var(--white);
     text-transform: capitalize;
 }
+#header__menu{
+    display: none}
 
 @media (max-width: 550px) {
     .header-nav{
@@ -74,26 +74,41 @@
     .header-nav__menu{
         flex-direction: column;
     }
-    #header__menu {
-        opacity: 0;
-    }
     .header-nav:hover{
         background-color:rgba(0, 0, 0, 0.9);
     }
-    #header__menu:checked ~ .menu__btn > span {
-        transform: rotate(45deg);
+    #header__menu{
+        position: absolute;
+        display: inline;
+        margin-left: 80%;
+        background-color:rgba(0, 0, 0, 0.9);
+        opacity: 0;
     }
-    #header__menu:checked ~ .menu__btn > span::before {
+    #header__menu:focus ~ .header__menu{
+        background-color:rgba(0, 0, 0, 0.9);
+        outline: 7px solid grey;
+        outline-width: 10px;
+    }
+    #header__menu:checked ~ .header__menu{
+        outline: 7px solid transparent;
+    }
+
+    #header__menu:checked ~ .header__menu > span {
+        transform: rotate(45deg);
+
+    }
+    #header__menu:checked ~ .header__menu > span::before {
         top: 0;
         transform: rotate(0);
     }
-    #header__menu:checked ~ .menu__btn > span::after {
+    #header__menu:checked ~ .header__menu > span::after {
         top: 0;
         transform: rotate(90deg);
     }
     #header__menu:checked ~ .header-nav {
         visibility: visible;
         left: 0;
+
     }
     .header{
         display: flex;
@@ -101,6 +116,7 @@
         padding-right: 2rem;
         padding-left: 2rem;
     }
+
     .menu__line {
         background: white;
         height: 3px;
@@ -132,7 +148,7 @@
         transition:all ease 0.2s;
     }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 560px) and (max-width: 1024px) {
     .header{
         padding-right: 2rem;
     }

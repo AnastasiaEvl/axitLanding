@@ -59,6 +59,15 @@
   object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+  #tabs{
+    scroll-margin-top: 5rem;
+  }
+  .tabs__block-content{
+    padding: 1rem 3rem;
+  }
+}
+
 @media (max-width: 750px) {
   .tabs__block-picture{
     display: none;
@@ -69,15 +78,5 @@
   .tabs__block-content{
     width: 100%;
     text-align: center;
-    padding: 0.9rem 0.5rem}
-  #tabs{
-    scroll-margin-top: 4rem;}
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  #tabs{
-    scroll-margin-top: 5rem;
-  }
-  .tabs__block-content{
-    padding: 1rem 3rem;
   }
 }

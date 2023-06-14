@@ -31,5 +31,7 @@
 @media (max-width: 750px) {
     .section-header {
         text-align: center;
+        padding-left:1rem;
+        padding-right:1rem;
     }
 }
